@@ -48,6 +48,7 @@ class BookingController extends Controller
     public function showDashboard()
     {
         
+        
         $branches = Branch::orderBy('branch_name')->get();
         return view('customer.dashboard', compact('branches'));
     }
